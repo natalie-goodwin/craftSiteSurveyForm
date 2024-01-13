@@ -13,26 +13,86 @@
     <p id="description">Please let us know what crafts and brands you love so we can improve our website.</p>
     
     <form id="survey form">
+
+    <fieldset>
+     
+       <label id="name-label">Name <input id="name" id="name-label" type="text" required placeholder="Enter your name" /></label>
+     
+      <label id="email-label">Email<input id="email" id="email-label" type ="email" required placeholder="Enter your email address"/></label>
+     
+     <label id="number-label">Age<input id="number" id="number-label" min="13" max= "120" type="number" required placeholder="Age"/></label>
+     
+     </fieldset>
+
+     <fieldset>
+      
+       <label for="craft-selector">What is you favorite craft?
+       
+          <select id="craft-selector" name="craft">
+            <option value="">(select one)</option>
+            <option value="1">Crocheting</option>
+            <option value="2">Knitting</option>
+            <option value="3">Sewing</option>
+            <option value="4">Needlepoint</option>
+            <option value="5">Scrapbooking</option>
+             <option value="6">Other</option>
+          </select>
+       
+       <p label for="addcrafts">If you selected other, please list in the box below: 
+          
+          <textarea id="addcrafts" name="comments" rows="3" cols="30" placeholder="more favorites..."></textarea>
+        </label>
+
+     </fieldset>
+
+     <fieldset>
+           <p>What is your favorite brand? (check all that apply)</p>
+
+           <label for="redheart">
+           <input id="redheart" type="checkbox" name="redheart" /> Red Heart
+           </label>
+
+           <label for="lion">
+           <input id="lion" type="checkbox" name="lion"/> Lion
+           </label>
+
+           <label for="sugarncream">
+           <input id="sugarncream" type="checkbox" name="sugarncream"/> Sugar 'n' Cream
+           </label>
+
+           <label for="clover">
+           <input id="clover" type="checkbox" name="clover"/> Clover
+           </label>
+
+           <label for="other">
+           <input id="other" type="checkbox" name="other" /> Other
+           </label>
+
+           <label for="other-description"> List additional brands here
+          
+          <textarea id="other-description" name="other-description" rows="3" cols="30" placeholder="other..."></textarea>
+         
+         </label>
     
-      <input id="name" id="name-label" type="text" placeholder="Enter your name"/>
-    
-      <input id="email" id="email-label" placeholder="Enter your email address"/>
-    
-      <input id="number" id="number-label" min="13" max= "120" placeholder="Enter your age"/>
-    
-      <p>What is your favorite craft?</p>
-    
-      <select id="dropdown"></select>
-    
-      <p>What is your favorite brand?</p>
-    
-      <select id="dropdown"></select>
-    
-      <p>If there's anything you would like to add, please let us know.</p>
-    
-      <textarea placeholder="Enter your comment here"></textarea>
-    
-      <button id="Submit">Submit</button>
+     </fieldset>
+
+     <fieldset>
+        <p>Do you craft as part of a business or hobby?</p>
+        <label for="business"><input id="business" type="radio" name="craft-type" class="inline" checked /> Business</label>
+        <label for="hobby"><input id="hobby" type="radio" name="craft-type" class="inline" /> Hobby</label>
+        <label for="both"><input id="both" type="radio" name="craft-type" class="inline" /> Both</label>
+     </fieldset>
+
+     <fieldset>
+         <label for="comments">If there's anything you would like to add, please let us know.
+          
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+         
+         </label>
+
+      <input type="submit" value="Submit" />   
+     
+     </fieldset>    
     
     </form>
 
